@@ -1,0 +1,96 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Abril Fatface', cursive;
+}
+body{
+    background: linear-gradient(#7DE5ED, #F8FFDB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+}
+.title{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #F07DEA;
+    text-shadow : 5px 1px white;
+    letter-spacing: 1px;
+}
+.todo-item{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(248, 245, 245, 0.1);
+    border-radius: 5px;
+    background-color: #fcecec;
+}
+.list-header{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.enter-list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(246, 242, 242);
+    font-size: 16px;
+    outline: none;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(8, 6, 133);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.work{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p{
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.item.completed p{
+    text-decoration: line-through;
+    color: #0f010180;
+}
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item-btn i{
+    color: rgb(8, 4, 254);
+    font-size: 18px;
+    cursor: pointer;
+}
+.item-btn :hover{
+    opacity: .6;
+    color: rgb(241, 230, 230);
+}
